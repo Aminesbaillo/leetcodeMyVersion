@@ -2,7 +2,7 @@ import pandas as pd
 data = {
     'teacher_id': [1, 1, 1, 2, 2, 2, 2],
     'subject_id': [2, 2, 3, 1, 2, 3, 4],
-    'dept_id': [3, 4, 3, 1, 1, 1, 1]
+    'dept_id': [3, 4, 3, 1, 1, 1, 1]    
 }
 data = pd.DataFrame(data= data)
 # print(data)
