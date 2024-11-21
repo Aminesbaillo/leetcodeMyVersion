@@ -13,15 +13,7 @@ print('-------------------------------------------------------------------------
 
 def largest_orders(orders: pd.DataFrame) -> pd.DataFrame:
     results = orders.groupby('customer_number')['order_number'].count().reset_index()
-    print('results  :')
-    print(results)
-    print('------------------------------------------------------------------------------------------------')
-
     max_order = results[results.order_number == results.order_number.max()]
-    print('max_order: ')
-    print(max_order)
-    print('------------------------------------------------------------------------------------------------')
-    print('results finale :')
     return max_order[['customer_number']]
 
 print(largest_orders(data))
