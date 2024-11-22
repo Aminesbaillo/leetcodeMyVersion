@@ -14,6 +14,5 @@ print('================================================================')
 def find_managers(employee: pd.DataFrame) -> pd.DataFrame:
     results = employee.groupby('managerId').agg(supervizedNum = ('id', 'count')).reset_index()
     l = list(results.managerId.astype(int))
-    
     return employee[employee['id'].isin(l) & employee['managerId'].isnull()][['name']]
 print(find_managers(employee))
