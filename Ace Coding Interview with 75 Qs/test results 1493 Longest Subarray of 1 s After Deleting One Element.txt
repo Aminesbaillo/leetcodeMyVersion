@@ -1,0 +1,96 @@
+Test 1: After deleting the number in position 4, longest subarray is [1,1,1,1,1]
+Input: [0, 1, 1, 1, 0, 1, 1, 0, 1]
+Expected Output: 5
+Output: 5
+Pass
+
+Test 2: Array of all 1's, delete one to get [1,1]
+Input: [1, 1, 1]
+Expected Output: 2
+Output: 2
+Pass
+
+Test 3: Only one element, delete it (empty array)
+Input: [1]
+Expected Output: 0
+Output: 0
+Pass
+
+Test 4: Only one element, delete it (empty array)
+Input: [0]
+Expected Output: 0
+Output: 0
+Pass
+
+Test 5: Array of all 0's, delete one to get [0]
+Input: [0, 0, 0, 0]
+Expected Output: 0
+Output: 0
+Pass
+
+Test 6: Alternating 1's and 0's, delete one `0` to get [1,1]
+Input: [1, 0, 1, 0, 1]
+Expected Output: 2
+Output: 2
+Pass
+
+Test 7: Deleting one `0` gives [1,1,1,1]
+Input: [1, 0, 0, 1, 1, 1]
+Expected Output: 3
+Output: 3
+Pass
+
+Test 8: Delete `0` at the start to get [1,1,1,1]
+Input: [0, 1, 1, 1, 1]
+Expected Output: 4
+Output: 4
+Pass
+
+Test 9: Delete `0` at the end to get [1,1,1,1]
+Input: [1, 1, 1, 1, 0]
+Expected Output: 4
+Output: 4
+Pass
+
+Test 10: Delete `0` to get [1,1]
+Input: [1, 0, 1]
+Expected Output: 2
+Output: 2
+Pass
+
+Test 11: Multiple zeros, delete one `0` to get [1,1]
+Input: [1, 0, 0, 1, 0, 1]
+Expected Output: 2
+Output: 2
+Pass
+
+Test 12: Array of [1, 0], delete `0` to get [1]
+Input: [1, 0]
+Expected Output: 1
+Output: 1
+Pass
+
+Test 13: Single element 1, delete it to get empty array
+Input: [1]
+Expected Output: 0
+Output: 0
+Pass
+
+Test 14: Delete `0` to get [1, 1, 1, 1, 1, 1]
+Input: [1, 1, 1, 0, 1, 1, 1]
+Expected Output: 6
+Output: 6
+Pass
+
+Test 15: Delete one `0` to get [1,1,1,1]
+Input: [1, 0, 0, 1, 1, 1]
+Expected Output: 3
+Output: 3
+Pass
+
+Test 16: Delete one `0` to get [1, 1, 1]
+Input: [1, 0, 0, 1]
+Expected Output: 1
+Output: 1
+Pass
+
